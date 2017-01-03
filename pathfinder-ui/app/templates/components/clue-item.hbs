@@ -1,0 +1,11 @@
+<span class="clue-item-component__desc">{{clue.desc}}</span>
+
+{{#if categorizing}}
+  <span class="clue-item-component__category">{{clue.category}}</span>
+{{/if}}
+
+{{#each clue.tags as |tag|}}
+  <span class="clue-item-component__tag">{{tag}}</span>
+{{/each}}
+
+<em class="clue-item-component__datetime">Modified {{clue.datetime}}</em>
